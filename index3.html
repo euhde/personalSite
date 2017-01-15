@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eric Uhde</title>
+	<!-- these link to the files in starter document: they are the icons !-->
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/png" href="img/face4.png"/>
+</head>
+
+
+<body>
+	<header>
+		<!-- clicking the logo brings you back to the homepage !-->
+		<div id= "header-inner">
+			<a href="index3.html" id="logo"></a>
+			<nav>
+				<!-- three bar menu icon !-->
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<!-- class is used for css !-->
+					<!-- href is a link !-->
+					<li> <a href="index3.html" class="current">Home</a> </li>
+					<li> <a href="portfolio.html">Portfolio</a> </li>
+					<li> <a href="resume.html">Resume</a> </li>
+					<li> <a href="aboutme.html">About Me</a> </li>
+					<li> <a href="contact.html">Contact</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!--End Header!-->
+
+<!--End Banner!-->
+
+
+<br><br><br><br><br>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img/hi3.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/iu3.png" style="width:100%">
+  </div>
+
+ <div class="mySlides fade">
+    <img src="img/scroll3.png" style="width:100%">
+  </div>
+  
+
+  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a> !-->
+  
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<section class= "banner2">
+			<br><br><br><br>
+			<p class = "intro"> Eric Uhde </p>
+			<img src="img/bar.png">
+			<p class = "intro2"> 
+			Undergraduate student of Informatics at Indiana University in Bloomington. <br>
+			I study a combination of software engineering, audio programming, and HCI design.<br>	
+			 </p>
+	</section>
+</class>
+
+
+
+
+
+
+	
+	<section class= "inner-wrapper">
+			<h2> Skills </h2>
+			<img src="img/bar.png">	
+	</section>
+	<section class= "inner-wrapper-4">
+		<ul class="skills-list"
+			<li> <img style="height:55px;max-width:200px;width: expression(this.width > 
+			500 ? 500: true);" id="img_DocPreview" src="img/python-logo.png" />	 </li>
+			<li> <img src="img/dot.png"> </li>
+			<li> <img style="height:55px;max-width:200px;width: expression(this.width > 
+			500 ? 500: true);" id="img_DocPreview" src="img/html-logo.png" /> </li>
+			<li> <img src="img/dot.png"> </li>
+			<li> <img style="height:55px;max-width:200px;width: expression(this.width > 
+			500 ? 500: true);" id="img_DocPreview" src="img/css-logo.png" /> </li>	
+			<li> <img src="img/dot.png"> </li>
+			<li> <img style="height:55px;max-width:200px;width: expression(this.width > 
+			500 ? 500: true);" id="img_DocPreview" src="img/javascript-logo.png" /> <li>		
+
+		</ul>
+	</section>
+	<section class= "inner-wrapper-5">
+		<ul class="skills-list-cont">
+			<li> <img style="height:30px;max-width:200px;width: expression(this.width > 
+			500 ? 500: true);" id="img_DocPreview" src="img/c.png" /> </li>
+			<li> <img src="img/dot.png"> </li>
+			<li> <img style="height:30px;max-width:200px;width: expression(this.width > 
+			500 ? 500: true);" id="img_DocPreview" src="img/unix.png" /> </li>
+		</ul>
+	</section>
+
+
+		
+	<section class="inner-wrapper-2">
+			<h2 class="proj"> Projects </h2> 
+			<img src="img/bar.png">	
+	</section>
+	
+	<section class="inner-wrapper-3">
+		<section class="one-third" id="google">
+			<h3>Smart Mirror </h3>
+			<a class='hi' href="portfolio.html">Using GitHub, a medicine cabinet, a two-way mirror, a moniter,
+			some shambley woodworking, and some less shambley software
+			skills, I was able to create a mirror that shows the date and 
+			weather! I was even able to show a message depending on the 
+			time of day. Click here to check it out.</a>
+		</section>
+		<section class="one-third" id="marketing">
+			<h3>Data Organization Projects </h3>
+			<a class='hi' href="portfolio.html">Using Python, I’ve created a few basic programs that can be used
+			to organize data. Neat stuff. You can find them on my GitHub.</a>
+		</section>
+		<section class="one-third" id="customers">
+			<h3>Virtual Studio Technology </h3>
+			<a class='hi' href="portfolio.html">With the help of C++ and JUCE, I’m in the process of creating a
+				VST signal processor plugin. Coming soon!</a>
+		</section>
+	</section>
+
+<!-- End of the Main Two Column Sections !-->
+	<!-- Icon Squares !-->
+	<!-- note for me: change the class names to avoid muh fuckin plagiarism !-->
+
+<!--End Icon Section !-->
+
+<!-- End three column section !-->
+	<section id="smiley">
+	</section>	
+	<section id="smiley">
+	</section>
+<!-- End Smiley Face !-->
+
+<!--End Footer section-->
+	<footer class="second">
+		<p>Eric Uhde </p>
+	</footer>
+<!-- End second footer !-->
+</body>
+
+</html>
