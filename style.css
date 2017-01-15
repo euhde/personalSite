@@ -1,0 +1,606 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #333333;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+/* .dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+	background-color: #333333;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 0;
+	}
+	
+h1 {
+	font-size: 120%;
+	font-family: Arial;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2%;
+	color: #0C0C0C;
+	}
+
+h2 {
+	font-size: 200%;
+	font-weight: 700;
+	text-align: left;
+	padding: 2% 0 0 2%;
+	color: black;
+	}
+
+h3 {
+	font-size: 175%;
+	line-height: 155%;
+	padding: 5% 0;
+	font-weight: 400;
+	color: #F5F5F5;
+	}
+
+p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #767677;
+	font-size: 100%;
+	line-height: 150%;
+	padding: 3%;
+	text-indent: 2%
+	text-align: justify;
+	}
+
+a.hi { 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #767677;
+	font-size: 100%;
+	line-height: 150%;
+	padding: 3%;
+	text-indent: 2%
+	text-align: justify;
+	text-decoration: none;
+}
+	
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: -4px;
+	}
+	
+header {
+	background-color: #0C0C0C;
+	width: 100%;
+	height: 86px;
+	}
+	
+#header-inner {
+	max-width: 1200px;
+	/* Navigation icon will stay centered */
+	margin: 0 auto;
+}
+
+#logo {
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 60px;
+	/* the background of this section is the RD logo */
+	background: url(img/face3.png) no-repeat center;
+}
+
+/* Start Navigation */
+
+nav {
+	float: right;
+	padding: 25px 20px 0 0;
+	}
+
+/* The following is for the mobile site? */
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(img/nav.png) center;
+	}
+	
+a:hover #menu-icon {
+	border-radius: 4px 4px 0 0;
+	}
+	
+ul {
+	/* removes dots on navigation menu text */
+	list-style-type:none;
+	}
+	
+nav ul li {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 100%;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	}
+	
+nav ul li a {
+	color: #F5F5F5;
+	text-decoration: none;
+	}
+
+nav ul li a: hover {
+	color: #29CAB9;
+	}
+	
+.current {
+	color: #E0EE2A;
+	}
+
+/* end of navigation */
+
+.banner {
+	width: 100%;
+	height: 580px;
+	background-color: #000000;
+	padding: 20px;
+	}
+
+.banner-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	}
+
+#cool-text {
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 25px;
+	}
+
+.animatedText {
+	animation: fadeAndScale .7s cubic-bezier(.29,.43,.77,.52);
+	transform-origin: center bottom;
+	}
+	
+.intro {
+	color: white;
+	text-align: left;
+	font-size: 250%;
+	}
+
+	
+.intro2 {
+	color: white;
+	text-align: left;
+	font-size: 140%;
+	font-weight: 100;
+	}
+	
+.SkillsText {
+	text-align: left;
+	padding: 3% 0 3% 8%;
+}
+
+
+.ProjectText {
+	text-align: left;
+	padding: 3% 0 3% 8%;
+}
+
+@keyframes fadeAndScale {
+	from {
+		opacity: 0;
+		transform: scale3D(.75, .75, 1);
+	}
+	to {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);		
+	}
+}	
+
+	
+.one-fourth {
+		/* the width at 25% makes each section take up 1 quarter of the width */
+		width: 25%;
+		float: left;
+		text-align: center;
+	}
+
+	
+.one-fourth i {
+	color: #F0F0F0;
+	font-size: 500%;
+	padding: 13% 0 4% 0;
+	}
+
+.inner-wrapper  {
+	float: left;
+	width: 100%;
+	background-color: #ADADAD;
+	padding: 3% 0 0 5%;
+	}
+
+.inner-port  {
+	float: left;
+	width: 100%;
+	background-color: #0C0C0C;
+	padding: 0 0 0 2%;
+	}
+
+
+.banner2 {
+	background-color: #0C0C0C;
+	width: 100%;
+	height: 450px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 0 0 3%;
+}
+
+
+
+article {
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	}
+
+languages {
+	display:inline-block;
+}
+
+tablet {
+	background-color: #F4F4E4;
+	color: #000000;
+	}
+	
+.proj {
+	font-size: 200%;
+	font-weight: 500;
+	text-align: left;
+	padding: 2% 0 0 2%;
+	color: white;
+	}
+	
+.proj2 {
+	font-size: 200%;
+	font-weight: 500;
+	text-align: left;
+	padding: 2% 0 0 2%;
+	color: white;
+	}
+
+aside {
+	float: right;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+
+	}
+	
+#tablet2 {
+	background-color: #A2B1C1;
+	}
+
+#mobile {
+	background-color: #BEB9AD;
+	}
+
+#desktop {
+	background-color: #F1AA90;
+	}
+	
+.inner-wrapper-2  {
+	float: left;
+	width: 100%;
+	background-color: #0C0C0C;
+	padding: 3% 0 0 5%;
+	}
+	
+
+.inner-wrapper-3 {
+	float: left;
+	padding: 1%;
+	width: 100%;
+	background-color: #0C0C0C;
+	}
+
+.inner-wrapper-4 {
+	float: left;
+	width: 100%;
+	background-color: #ADADAD;
+	padding: 0 0 0 3%;	
+	}
+
+.inner-wrapper-5 {
+
+	float: left;
+	width: 100%;
+	background-color: #ADADAD;	
+	height: 150px;
+	}
+	
+.inner-wrapper-6 {
+	float: left;
+	width: 100%;
+	background-color: #0C0C0C;	
+	}
+
+.one-third {
+	width: 32.22%;
+	float: left;
+	text-align: center;
+	}
+
+#google {
+	background-color: #0C0C0C;
+	}
+	
+#marketing {
+	background-color: #0C0C0C;
+	}
+	
+#customers {
+	background-color: #0C0C0C;
+	}
+	
+#smiley {
+	background-color: #0C0C0C;
+	padding: 0 0 1%;
+	clear: both;
+	}
+
+/* Start footer */
+
+footer {
+	background-color: #0C0C0C;
+	width: 100%;
+	}
+	
+.social {
+	list-style-type: none;
+	text-align: center;
+	}
+
+.social li {
+	display: inline;
+	}
+	
+.social i {
+	font-size: 460%;
+	margin: 1%;
+	padding: 5% 5% 5% 4%;
+	color: #C3D7DF;
+	}
+	
+.social i:hover {
+	color: #F5F5F5;
+	}
+	
+.skills-list {
+	list-style-type: none;
+	text-align: center;
+	padding: 3% 0 2% 0;
+	background-color; #F4F4E4;
+}
+
+.skills-list li {
+	display: inline;
+	}
+
+.skills-list-cont {
+	list-style-type: none;
+	text-align: center;
+	padding: 0 0 5% 0;
+	background-color; #F4F4E4;
+}
+
+.skills-list-cont li {
+	display: inline;
+	}
+	
+footer.second {
+	border-top: 2px solid #AADCD2;
+	background-color: #000000;
+	max-height: 55px;
+	margin: 0;
+	}
+	
+footer.second p {
+	padding: 5px 0 9px 0;
+	text-align: center;
+	}
+
+/* media queries */
+
+/* if media screen is 760px or below */
+/* this modifies the settings for phone screens */
+
+@media screen and (max-width: 760px) {
+		h1 {
+			font-size: 110%;
+			color: 000000;
+		}
+		h2 {
+			font-size: 150%;
+		}
+		h3 {
+			font-size: 125%;
+		}
+		p {
+			font-size: 120%;
+		}
+		.proj {
+			font-size: 150%;
+		}
+		header {
+			position: absolute;
+		}
+		#logo {
+			margin: 15px 0 20px -25px;
+			/*logo is smaller */
+			background: url(img/face3.png) no-repeat center;
+		}
+		#menu-icon {
+			display: inline-block;
+		}
+		nav ul, nav:active ul {
+			display: none;
+			/*makes icon not fidgety and weird*/
+			z-index: 1000;
+			position: absolute;
+			padding: 20px;
+			background: #000000;
+			right: 20px;
+			top: 60px;
+			/*nav menu border */
+			border: 2px solid #FFF;
+			border-radius: 10px 0 10px 10px;
+			width: 50%;
+		}
+		nav:hover ul {
+			display: block;
+		}
+		nav li {
+			text-align: center;
+			width: 100%;
+			padding: 10px 0 10px 0;
+		}
+		.banner {
+		/* this adds space between the picture of the desk and the header above it */
+			padding-top: 86px;
+		}
+		.one-fourth {
+			float: left;
+			width: 100%;
+		}
+		.one-fourth i {
+			font-size: 350%;
+			padding: 4% 0 1% 0;
+		}
+		article {
+		/* makes images / paragraph sections take up 100% of the width */
+			width: 100%;
+		}
+		aside {
+		/* makes images / paragraph sections take up 100% of the width */
+			width: 100%;
+		}
+		
+		/*this removes the hand mobile picture in phone view */
+		.hand-mobile {
+			display: none;
+		}
+		
+		.one-third {
+			width: 100%;
+		}
+		.social i {
+			font-size: 180%;
+		}
+	}	
+	
+	
+	
+	
+	
+	
